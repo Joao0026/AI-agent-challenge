@@ -1,0 +1,65 @@
+[
+  {
+    "cve_id": "CVE-1999-0095",
+    "original_desc": "The debug command in Sendmail is enabled, allowing attackers to execute commands as root.",
+    "ai_analysis": {
+      "topics": [
+        "privilege escalation",
+        "exploit",
+        "Sendmail vulnerability"
+      ],
+      "severity": "Critical",
+      "summary": "Sendmail debug command enables attackers to execute commands as root."
+    }
+  },
+  {
+    "cve_id": "CVE-1999-0082",
+    "original_desc": "CWD ~root command in ftpd allows root access.",
+    "ai_analysis": {
+      "topics": [
+        "exploit",
+        "privilege escalation",
+        "ftp vulnerability"
+      ],
+      "severity": "Critical",
+      "summary": "The CWD ~root command in ftpd allows unauthorized root access"
+    }
+  },
+  {
+    "cve_id": "CVE-1999-1471",
+    "original_desc": "Buffer overflow in passwd in BSD based operating systems 4.3 and earlier allows local users to gain root privileges by specifying a long shell or GECOS field.",
+    "ai_analysis": {
+      "topics": [
+        "buffer overflow",
+        "privilege escalation"
+      ],
+      "severity": "Critical",
+      "summary": "Buffer overflow in BSD-based passwd allows local users to gain root privileges."
+    }
+  },
+  {
+    "cve_id": "CVE-1999-1122",
+    "original_desc": "Vulnerability in restore in SunOS 4.0.3 and earlier allows local users to gain privileges.",
+    "ai_analysis": {
+      "topics": [
+        "privilege escalation",
+        "local vulnerability"
+      ],
+      "severity": "High",
+      "summary": "A vulnerability in SunOS 4.0.3 and earlier allows local users to gain privileges."
+    }
+  },
+  {
+    "cve_id": "CVE-1999-1467",
+    "original_desc": "Vulnerability in rcp on SunOS 4.0.x allows remote attackers from trusted hosts to execute arbitrary commands as root, possibly related to the configuration of the nobody user.",
+    "ai_analysis": {
+      "topics": [
+        "Remote Code Execution",
+        "Privilege Escalation",
+        "Trusted Host Vulnerability"
+      ],
+      "severity": "Critical",
+      "summary": "Vulnerability in rcp on SunOS 4.0.x allows remote attackers to execute arbitrary commands as root."
+    }
+  }
+]
