@@ -2,7 +2,7 @@
 
 This project is a Python tool that automatically finds and analyzes security vulnerabilities (CVEs). 
 
-It gets real-time data from the NIST National Vulnerability Database and uses the Llama 3.3 AI model (via Groq) to explain risks and severity.
+It gets data from the NIST National Vulnerability Database and uses the Llama 3.3 AI model (via Groq) to explain risks and severity.
 
 ## Main Features
 - **Auto-Fetch:** Downloads the latest security flaws from the NIST API.
