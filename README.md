@@ -1,23 +1,17 @@
-# AI Security Agent
+# AI-Driven Security Intelligence Aggregator
 
-This project is a Python tool that automatically finds and analyzes security vulnerabilities (CVEs). 
+This project is a backend service developed in Python that aggregates security information from the NIST NVD API and uses a Large Language Model (LLM) to extract insights.
 
-It gets data from the NIST National Vulnerability Database and uses the Llama 3.3 AI model (via Groq) to explain risks and severity.
+## 1. AI Agent & Prompt Design
+The agent processes the ingested text using the **Llama 3.3** model (via **Groq API**) to extract:
+- **Key security topics:** Malware, Phishing, Ransomware, Zero-days, etc.
+- **Severity level:** Low, Medium, High, or Critical.
+- **Summary:** A short AI-generated technical overview.
 
-## Main Features
-- **Auto-Fetch:** Downloads the latest security flaws from the NIST API.
-- **AI Analysis:** Uses AI to summarize what the vulnerability does and how bad it is.
-- **Save to File:** Saves all analysis into a `findings.json` file.
+### Prompt Structure
+The system uses a structured prompt to ensure the LLM returns a strict JSON format for automated processing.
 
-## Tech Stack
-- **Language:** Python 3.13
-- **AI Model:** Llama 3.3 (Groq API)
-- **Data Source:** NIST NVD API
-- **Libraries:** `requests`, `python-dotenv`, `groq`
-
-## Project Structure
-- `main.py`: The main script that runs the whole process.
-- `tools.py`: Handles downloading data and saving files.
-- `llm_agent.py`: Sends the data to the AI.
-- `prompts.py`: Contains the instructions for the AI.
-- `.env`: Groq API key
+## 2. MCP-Style Tools
+The agent implements two core tools for the workflow:
+- `fetchSecurityData()`: Retrieves data from the public NIST source.
+- `storeFinding()`: Stores the processed AI results into a local `findings.json` file.
