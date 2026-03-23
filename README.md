@@ -8,7 +8,6 @@ It gets real-time data from the NIST National Vulnerability Database and uses th
 - **Auto-Fetch:** Downloads the latest security flaws from the NIST API.
 - **AI Analysis:** Uses AI to summarize what the vulnerability does and how bad it is.
 - **Save to File:** Saves all analysis into a `findings.json` file.
-- **Clean Code:** Organized into simple modules for easy updates.
 
 ## Tech Stack
 - **Language:** Python 3.13
