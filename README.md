@@ -1,4 +1,4 @@
-# Sentinel CVE: AI Security Agent
+# AI Security Agent
 
 This project is a Python tool that automatically finds and analyzes security vulnerabilities (CVEs). 
 
